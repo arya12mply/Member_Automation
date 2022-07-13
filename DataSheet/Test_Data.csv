@@ -7,9 +7,10 @@ last_name,paul
 date,22-12-1992
 zipcode,10001
 reg_sucess_popup,User Verified Successfully.
-email_reg,raggle52@gmail.com
-phone_no,8596471233
+email_reg,raggle54@gmail.com
+phone_no,8596471235
 password_reg,Password@123
 confirm_reg,Password@123
 otp_no,1234
 new_user_reg,New User Registration
+ac_created_pop,Account Created Successfully.

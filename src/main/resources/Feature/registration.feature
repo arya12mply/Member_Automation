@@ -13,8 +13,9 @@ Feature:Member Portal Signup Scenario
 
  Scenario: create account  page
    Then User can able to enter the data in create account page
+   Then User can able to see pop account created successfully
 
- Scenario:  otp verification page
+  Scenario:  otp verification page
    When enter otp and navigated to sucessfull page
 
 

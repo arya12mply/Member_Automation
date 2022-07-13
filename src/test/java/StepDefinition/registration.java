@@ -79,7 +79,15 @@ public class registration extends Generic_function {
         driver.findElement(By.xpath(OR_reader("create_account")));
         click("create_account");
     }
-
+    @Then("User can able to see pop account created successfully")
+    public void user_can_able_to_see_pop_account_created_successfully() throws IOException, InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(500));
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR_reader("ac_created_pop"))));
+        String edittext = element.getText();
+        System.out.println(edittext);
+        Assert.assertEquals(edittext, td_reader("ac_created_pop"));
+        Thread.sleep(1000);
+    }
     @When("enter otp and navigated to sucessfull page")
     public void enter_otp_and_navigated_to_sucessfull_page() throws IOException, InterruptedException {
         Thread.sleep(6000);

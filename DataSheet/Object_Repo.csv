@@ -26,3 +26,4 @@ terms_condition,xpath,"//*[@id=""root""]/main/div[2]/div[2]/div[2]/form/div[2]/d
 tc_ok,xpath,/html/body/div[2]/div[3]/div/div[2]/button
 privacy_policy,xpath,"//*[@id=""root""]/main/div[2]/div[2]/div[2]/form/div[2]/div/div[1]/button[2]"
 pp_ok,xpath,/html/body/div[2]/div[3]/div/div[2]/button
+ac_created_pop,xpath,"//*[contains(text(),'Account Created Successfully.')]"
