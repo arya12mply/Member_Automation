@@ -1,10 +1,10 @@
 Field_name,Field_locator_name,Field_locator_value
-email,xpath,"//*[@id=""mui-1""]"
-password,xpath,"//*[@id=""mui-2""]"
-login,xpath,"//*[@id=""root""]/main/div[2]/div[2]/form/button"
+email,xpath,//input[@name='email']
+password,xpath,//input[@name='password']
+login,xpath,//button[@ type='submit']
 ssn_radio,xpath,"//*[@id=""root""]/main/div[2]/div[2]/div[2]/div/div/label[2]/span[1]/input"
 ssn,xpath,//input[@name='ssn']
-first_name,xpath,//input[@name='firstname']
+first_name,xpath,
 last_name,xpath,//input[@name='lastname']
 date,xpath,//input[@name='date']
 zipcode,xpath,//input[@name='zipcode']
@@ -27,3 +27,5 @@ tc_ok,xpath,/html/body/div[2]/div[3]/div/div[2]/button
 privacy_policy,xpath,"//*[@id=""root""]/main/div[2]/div[2]/div[2]/form/div[2]/div/div[1]/button[2]"
 pp_ok,xpath,/html/body/div[2]/div[3]/div/div[2]/button
 ac_created_pop,xpath,"//*[contains(text(),'Account Created Successfully.')]"
+otp_sent_pop,xpath,"//*[contains(text(),'OTP Sent Successfully.')]"
+forgots,xpath,"//*[@id=""root""]/main/div[2]/div[2]/form/div[2]/a"

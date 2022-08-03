@@ -1,4 +1,5 @@
 Runner_file\TestSuite.class
-StepDefinition\login.class
-StepDefinition\registration.class
+StepDefinition\Registration_Positive_Scenario.class
+StepDefinition\Login_Forgot_Password_Positive_Scenario.class
+StepDefinition\Login_Positive_Scenario.class
 Usable_Function\Generic_function.class

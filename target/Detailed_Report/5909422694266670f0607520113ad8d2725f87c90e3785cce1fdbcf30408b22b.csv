@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Member Portal Signup Scenario","Launch the browser and navigated to signup page","SUCCESS","2022-08-03T17:47:40.029802+05:30[Asia/Calcutta]","0.0","12.55"
+"Member Portal Signup Scenario","verify that the logo is displayed","SUCCESS","2022-08-03T17:47:52.6132735+05:30[Asia/Calcutta]","0.0","0.17"
+"Member Portal Signup Scenario","Member detail page","PENDING","2022-08-03T17:47:52.8606796+05:30[Asia/Calcutta]","0.0","0.04"
+"Member Portal Signup Scenario","create account  page","ERROR","2022-08-03T17:47:52.9209714+05:30[Asia/Calcutta]","0.0","22.23"
+"Member Portal Signup Scenario","otp verification page","ERROR","2022-08-03T17:48:15.1753123+05:30[Asia/Calcutta]","0.0","6.07"

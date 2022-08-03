@@ -1,16 +1,18 @@
 x,Field_Data_iteration1
 email,tesla@test.com
 password,Password@123
-ssn,123456798
-first_name,thomas
-last_name,paul
+ssn,123456789
+first_name,drake
+last_name,ramoray
 date,22-12-1992
 zipcode,10001
-reg_sucess_popup,User Verified Successfully.
-email_reg,raggle54@gmail.com
-phone_no,8596471235
+reg_sucess_popup,User Verified Successfullys.
+email_reg,ramoray3@gmail.com
+phone_no,9995973534
 password_reg,Password@123
 confirm_reg,Password@123
 otp_no,1234
 new_user_reg,New User Registration
 ac_created_pop,Account Created Successfully.
+otp_sent_pop,OTP Sent Successfully.
+signup_fname,"james, thomas"

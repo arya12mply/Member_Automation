@@ -3,21 +3,22 @@ package Usable_Function;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.Augmenter;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -184,6 +185,10 @@ public class Generic_function {
         }
         return null;
     }
+    private static String getDir() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 //////////////////////////////////////
     //for registration
 public WebDriver browsers_launch() throws IOException {
@@ -273,6 +278,22 @@ public WebDriver browsers_launch() throws IOException {
         je.executeScript("arguments[0].scrollIntoView(true);",element1);
         driver.findElement(By.xpath(OR_reader("pp_ok")));
         click("pp_ok");
+    }
+    // generate an email id
+    // screenshot
+    public static String captureScreen(String fileName) {
+
+        try {
+
+            File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            path = "./target/screenshots/" + source.getName();
+            FileUtils.copyFile(source, new File(path+fileName+".png"));
+        }
+        catch(IOException e) {
+            e.printStackTrace();
+            path = "Failed to capture screenshot: " + e.getMessage();
+        }
+        return path;
     }
 
 }
