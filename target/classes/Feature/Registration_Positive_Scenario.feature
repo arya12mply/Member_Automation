@@ -7,7 +7,7 @@ Feature:Member Portal Signup Scenario
     Then verify logo is displayed on signup page
 
   Scenario:  Member detail page
-    Then verify new user registration headings
+    Then verify new user registration heading
     Then User can able to enter the data in member detail page
     Then User can able to see user verified successful msg
 

@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         plugin = {"pretty"},
-        features = {"C://Users//Abhinav Kashyap//IdeaProjects//Member_Portal//src//main//resources//Feature//Registration_Positive_Scenario.feature"},
+        features = {"C://Users//Abhinav Kashyap//IdeaProjects//Member_Portal//src//main//resources//Feature//Login_Forgot_Password_Positive_Scenario.feature"},
         glue = {"StepDefinition"}
 )
 

@@ -16,3 +16,6 @@ new_user_reg,New User Registration
 ac_created_pop,Account Created Successfully.
 otp_sent_pop,OTP Sent Successfully.
 signup_fname,"james, thomas"
+forgot_enter_otp,1234
+new_password,Password@123
+confirm_password,Password@123
