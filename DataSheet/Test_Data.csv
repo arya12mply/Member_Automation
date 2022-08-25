@@ -6,9 +6,9 @@ first_name,drake
 last_name,ramoray
 date,22-12-1992
 zipcode,10001
-reg_sucess_popup,User Verified Successfullys.
-email_reg,ramoray3@gmail.com
-phone_no,9995973534
+reg_sucess_popup,User Verified Successfully.
+email_reg,paul4@gmail.com
+phone_no,8593923384
 password_reg,Password@123
 confirm_reg,Password@123
 otp_no,1234
@@ -19,3 +19,5 @@ signup_fname,"james, thomas"
 forgot_enter_otp,1234
 new_password,Password@123
 confirm_password,Password@123
+forgot_password_heading,Forgot Password
+new_password_heading,Create New Password

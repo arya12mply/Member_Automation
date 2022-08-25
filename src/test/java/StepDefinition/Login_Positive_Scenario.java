@@ -33,7 +33,7 @@ public class Login_Positive_Scenario extends Generic_function {
             driver.findElement(By.xpath(OR_reader("login")));
             click("login");
             Thread.sleep(2000);
-            captureScreen("login");
+            takeScreenShot("login");
             driver.close();
 
 

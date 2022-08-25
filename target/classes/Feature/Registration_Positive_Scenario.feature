@@ -8,11 +8,11 @@ Feature:Member Portal Signup Scenario
 
   Scenario:  Member detail page
     Then verify new user registration heading
-    Then User can able to enter the data in member detail page
+    And User can able to enter the data in member detail page
     Then User can able to see user verified successful msg
 
   Scenario: create account  page
-    Then User can able to enter the data in create account page
+    And User can able to enter the data in create account page
     Then User can able to see popup account created successfully
 
   Scenario:  otp verification page

@@ -5,6 +5,16 @@ Feature: Login Forgot Password
 
   Scenario: Forgot Password
     When Click on Forgot Button Link
-    Then navigated to Forgot Password Page and enter the linked phone number
-    Then navigated to otp verification page and enter the otp
-    Then Verify user can able to create new Password
+    And Enter Linked Phone number
+    And Click on Send Otp Button
+    Then Navigated to forgot password otp page
+    And Enter otp number
+    And Click on Save Changes Button
+    Then Navigated to create new password page
+    And Create new Password
+    And Click on Change Password Button
+
+
+
+
+

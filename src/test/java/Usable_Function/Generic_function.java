@@ -53,7 +53,7 @@ public class Generic_function {
     static File file = new File("config/serenity.properties");
     static Properties prop = new Properties();
     public static String getURL() {
-        String URL= prop.getProperty("URL");
+        String URL= prop.getProperty("LOGIN_URL");
         if(URL!=null) return URL ;
         else throw new RuntimeException ("URL is not specified in the Config.properties");
     }
@@ -248,8 +248,10 @@ public WebDriver browsers_launch() throws IOException {
         if(URL!=null) return URL ;
         else throw new RuntimeException ("URL is not specified in the Config.properties");
     }
+    @SuppressWarnings("deprecation")
+    // Note : @SuppressWarnings annotation disables certain compiler warnings.
     public static void browser_wait(int time) {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
+        driver.manage().timeouts().implicitlyWait(time,TimeUnit.SECONDS);
     }
     public static void hover_verify() throws InterruptedException {
         // verify hover ssn id card working
@@ -281,19 +283,15 @@ public WebDriver browsers_launch() throws IOException {
     }
     // generate an email id
     // screenshot
-    public static String captureScreen(String fileName) {
 
-        try {
+        public static  void takeScreenShot(String fileName) throws IOException {
+            File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(file, new File(getDir()+fileName+".png"));
+        }
+        public static void scrolldown() {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollBy(0,-350)", "");
+        }
 
-            File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            path = "./target/screenshots/" + source.getName();
-            FileUtils.copyFile(source, new File(path+fileName+".png"));
-        }
-        catch(IOException e) {
-            e.printStackTrace();
-            path = "Failed to capture screenshot: " + e.getMessage();
-        }
-        return path;
-    }
 
 }

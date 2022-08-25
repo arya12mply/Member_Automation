@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import Usable_Function.Generic_function;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.commons.io.FileUtils;
@@ -34,9 +35,11 @@ public class Registration_Positive_Scenario extends Generic_function {
     }
     @Then("verify new user registration heading")
     public void verify_new_user_registration_heading() throws IOException {
-        registration_heading();
+        str= driver.findElement(By.xpath(OR_reader("new_user_reg"))).getText();
+        System.out.println(str);
+        Assert.assertEquals(str,td_reader("new_user_reg"));
     }
-    @Then("User can able to enter the data in member detail page")
+    @And("User can able to enter the data in member detail page")
     public void user_can_able_to_enter_the_data_in_member_detail_page() throws IOException, InterruptedException {
         try {
             driver.findElement(By.xpath(OR_reader("ssn_radio"))).click();
@@ -52,7 +55,7 @@ public class Registration_Positive_Scenario extends Generic_function {
         }
         catch (IOException e)
         {
-            captureScreen("failed");
+            takeScreenShot("failed");
         }
 
     }
@@ -68,7 +71,7 @@ public class Registration_Positive_Scenario extends Generic_function {
             Thread.sleep(1000);
 
     }
-    @Then("User can able to enter the data in create account page")
+    @And("User can able to enter the data in create account page")
     public void user_can_able_to_enter_the_data_in_create_account_page() throws InterruptedException, IOException {
         Thread.sleep(8000);
         registration_heading();

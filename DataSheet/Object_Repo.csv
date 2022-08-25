@@ -28,11 +28,14 @@ privacy_policy,xpath,"//*[@id=""root""]/main/div[2]/div[2]/div[2]/form/div[2]/di
 pp_ok,xpath,/html/body/div[2]/div[3]/div/div[2]/button
 ac_created_pop,xpath,"//*[contains(text(),'Account Created Successfully.')]"
 otp_sent_pop,xpath,"//*[contains(text(),'OTP Sent Successfully.')]"
-forgots,xpath,"//*[@id=""root""]/main/div[2]/div[2]/form/div[2]/a"
-acc_link_phoneno,xpath,//input[@type='text']
-forgot_send_otp,xpath,//button[@type='button']
+forgots,xpath,"//a[contains(@href,'forgotPassword')]"
+acc_link_phoneno,xpath,//input[@name='phonenumber']
+send_otp,xpath,//button[@class='MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-fullWidth MuiButtonBase-root  css-124440u']
 forgot_enter_otp,xpath,//input[@name='otp']
 sent_changes,xpath,//button[@type='button']
 new_password,xpath,//input[@name='password']
 confirm_password,xpath,//input[@name='confirmpassword']
 change_password,xpath,//button[@type='submit']
+forgot_password_heading,xpath,//span[@class='MuiTypography-root MuiTypography-title css-1qwpbkh']
+new_password_heading,xpath,//span[@class='MuiTypography-root MuiTypography-title css-1qwpbkh']
+logo_home,xpath,//img[@src='https://member-portal-resources.s3.amazonaws.com/affiliate1/bcbsLogoNew.svg']
